@@ -1,0 +1,88 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  gap: 2;
+}
+.upper-div {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+.current-item {
+  text-decoration: underline;
+  color: red;
+}
+.middle-div {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+  list-style-type: none;
+}
+.current-sub-item {
+  color: Red;
+  text-decoration: dotted;
+  list-style-type: disc;
+}
+
+.display-div {
+  display: flex;
+  width: 100%;
+  /* padding: 1rem 2rem; */
+  justify-content: right;
+}
+.display-right-div {
+  display: flex;
+  gap: 2.5rem;
+  padding: 1rem 4rem 2rem 2rem;
+  font-size: 1.2rem;
+}
+.current-toggle {
+  color: red;
+}
+.disable-toggle {
+  color: black;
+}
+.lower-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+.lower-div-item {
+  display: flex;
+  gap: 3rem;
+  padding: 1.5rem;
+  border-top: 1px solid black;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 10px; /* Adjust this for spacing between items */
+}
+.image-div {
+  width: 90%;
+}
+.lower-img-text {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 2% 5%;
+}
+.image-reveal {
+  display: none;
+}
+
+.lower-div-item:hover .image-reveal {
+  display: block; /* Show the image on hover */
+}
+.image-reveal {
+  position: absolute;
+  width: 12rem;
+  right: 10rem;
+}
